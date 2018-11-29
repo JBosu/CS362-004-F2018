@@ -48,7 +48,8 @@ int main(){
 			int curDisCount = testG.discardCount[currentPlayer];
 			printf("Player %d discard count before call to adventurer: %d\n", currentPlayer, curDisCount);
 
-			cardAdventurer(0, &testG, currentPlayer, tempHand, 0);
+			//cardAdventurer(0, &testG, currentPlayer, tempHand, 0);
+			AdventurerCard(&testG, 0, currentPlayer, tempHand, 0);
 			int updateDisCount = testG.handCount[currentPlayer];
 			printf("Player %d discard count after call to adventurer: %d\n", currentPlayer, updateDisCount);
 
@@ -67,7 +68,8 @@ int main(){
 			int curCardCount = testG.handCount[currentPlayer];
 			printf("Player %d card count before call to adventurer: %d\n", currentPlayer, curCardCount);
 
-			cardAdventurer(0, &testG, currentPlayer, tempHand, 0);
+			//cardAdventurer(0, &testG, currentPlayer, tempHand, 0);
+			AdventurerCard(&testG, 0, currentPlayer, tempHand, 0);
 			int updateCardCount = testG.handCount[currentPlayer];
 			printf("Player %d card count after call to adventurer: %d\n", currentPlayer, updateCardCount);
 

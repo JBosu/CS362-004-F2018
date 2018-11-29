@@ -45,7 +45,8 @@ int main(){
 		int curActions = testG.numActions;
 		printf("Player %d actions before call to village: %d\n", currentPlayer, curActions);
 
-		cardVillage(currentPlayer, &testG, handpos);
+		//cardVillage(currentPlayer, &testG, handpos);
+		VillageCard(&testG, currentPlayer, handpos);
 		int updateActions = testG.numActions;
 		printf("Player %d actions after call to village: %d\n", currentPlayer, updateActions);
 
@@ -64,7 +65,8 @@ int main(){
 		int curCardCount = testG.handCount[currentPlayer];
 		printf("Player %d card count before call to village: %d\n", currentPlayer, curCardCount);
 
-		cardVillage(currentPlayer, &testG, handpos);
+		//cardVillage(currentPlayer, &testG, handpos);
+		VillageCard(&testG, currentPlayer, handpos);
 		int updateCardCount = testG.handCount[currentPlayer];
 		printf("Player %d card count after call to village: %d\n", currentPlayer, updateCardCount);
 

@@ -1,0 +1,1746 @@
+Results for unittest1:
+--------Testing compare() Function--------
+Test 1: a = 1, b = 2, result should be -1
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 2: a = 2, b = 1, result should be 1
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 3: a = 2, b = 2, result should be 0
+TEST SUCCESSFULLY COMPLETED - PASS
+End of unittest1.
+
+Results for unittest2:
+------Testing initializeGame() Function------
+Test 1: initialize 10 unique Kingdom Cards and 2 players.
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 2: initialize 2 duplicate Kingdom Cards and 2 players.
+Expected result should throw an error.
+TEST SUCCESSFULLY COMPLETED - PASS
+This correctly resulted in an error for duplicate K card.
+
+Test 3: initialize only 9 Kingdom Cards and 2 players.
+Expected result should throw an error.
+TEST FAILED
+
+Test 4: initialize game with 5 players, which exceeds the max allowed.
+Expected result should throw an error.
+TEST SUCCESSFULLY COMPLETED - PASS
+End of unittest2.
+
+Results for unittest3:
+-----------Testing getCost() Function------------
+Test 1: get cost for Curse card. Expected cost is 0.
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 2: get cost for Estate card. Expected cost is 2.
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 3: get cost for Treasure_map card. Expected cost is 4.
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 4: request card out of enum range. Result should be -1 error.
+TEST SUCCESSFULLY COMPLETED - PASS
+End of unittest3.
+
+Results for unittest4:
+-----------Testing shuffle() Function----------
+Test 1: shuffle and confirm it completed successfully. Expect return 0.
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 2: check player 1 cards in hand. Should be 5 cards in hand.
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 3: check player 1 played cards. Should be 0 cards played.
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 4: check player 1 discard count. Should be 0 cards discarded.
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 5: cards held for player out of range. Should return an error.
+TEST FAILED. This should return an error
+Result: 0 
+End of unittest4.
+
+Results for cardtest1:
+-------------Testing Smithy Card---------------
+Test 1: current player should receive 3 cards
+player 1 card count before call to smithy: 5
+player 1 card count after call to smithy: 7
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 2: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+End of cardtest1.
+
+Results for cardtest2:
+-------------Testing Adventurer Card---------------
+Test 1: discard card should increase.
+player 1 discard count before call to adventurer: 0
+player 1 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 2: card count should change.
+Player 1 card count before call to adventurer: 5
+Player 1 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+End of cardtest2.
+
+Results for cardtest3:
+-------------Testing Village Card---------------
+Test 1: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 2: card count should increase by 1.
+Player 1 card count before call to village: 5
+Player 1 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+End of cardtest3.
+
+Results for cardtest4:
+-------------Testing Great Halls Card---------------
+Test 1: actions should increase by 2.
+Player 1 actions before call to great_halls: 1
+Player 1 actions after call to great_halls: 2
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 2: card count should increase by 1.
+Player 1 card count before call to great_halls: 5
+Player 1 card count after call to great_halls: 5
+TEST FAILED. Card count did not increase by 1.
+
+
+End of cardtest4.
+
+Results for randomtestcard1:
+-------------Testing Smithy Card---------------
+Test 1: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 1: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 2: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 2: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 3: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 3: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 4: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 4: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 5: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 5: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 6: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 6: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 7: current player should receive 3 cards
+player 2 card count before call to smithy: 0
+player 2 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 7: current player discard should occur.
+Player 2 discard count before call to smithy: 0
+Player 2 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 8: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 8: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 9: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 9: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 10: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 10: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 11: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 11: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 12: current player should receive 3 cards
+player 2 card count before call to smithy: 0
+player 2 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 12: current player discard should occur.
+Player 2 discard count before call to smithy: 0
+Player 2 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 13: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 13: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 14: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 14: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 15: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 15: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 16: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 16: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 17: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 17: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 18: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 18: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 19: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 19: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 20: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 20: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 21: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 21: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 22: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 22: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 23: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 23: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 24: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 24: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 25: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 25: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 26: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 26: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 27: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 27: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 28: current player should receive 3 cards
+player 2 card count before call to smithy: 0
+player 2 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 28: current player discard should occur.
+Player 2 discard count before call to smithy: 0
+Player 2 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 29: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 29: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 30: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 30: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 31: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 31: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 32: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 32: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 33: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 33: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 34: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 34: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 35: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 35: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 36: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 36: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 37: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 37: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 38: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 38: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 39: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 39: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 40: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 40: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 41: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 41: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 42: current player should receive 3 cards
+player 2 card count before call to smithy: 0
+player 2 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 42: current player discard should occur.
+Player 2 discard count before call to smithy: 0
+Player 2 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 43: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 43: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 44: current player should receive 3 cards
+player 2 card count before call to smithy: 0
+player 2 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 44: current player discard should occur.
+Player 2 discard count before call to smithy: 0
+Player 2 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 45: current player should receive 3 cards
+player 2 card count before call to smithy: 0
+player 2 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 45: current player discard should occur.
+Player 2 discard count before call to smithy: 0
+Player 2 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 46: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 46: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 47: current player should receive 3 cards
+player 2 card count before call to smithy: 0
+player 2 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 47: current player discard should occur.
+Player 2 discard count before call to smithy: 0
+Player 2 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 48: current player should receive 3 cards
+player 3 card count before call to smithy: 0
+player 3 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 48: current player discard should occur.
+Player 3 discard count before call to smithy: 0
+Player 3 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 49: current player should receive 3 cards
+player 0 card count before call to smithy: 5
+player 0 card count after call to smithy: 7
+TEST FAILED. Count did not increase by 3.
+
+Test 49: current player discard should occur.
+Player 0 discard count before call to smithy: 0
+Player 0 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+Test 50: current player should receive 3 cards
+player 1 card count before call to smithy: 0
+player 1 card count after call to smithy: 2
+TEST FAILED. Count did not increase by 3.
+
+Test 50: current player discard should occur.
+Player 1 discard count before call to smithy: 0
+Player 1 discard count after call to smithy: 0
+TEST FAILED. Discard count did not change.
+End of randomtestcard1.
+
+Results for randomtestcard2:
+-------------Testing Village Card---------------
+Test 1: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 1: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 2: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 2: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 3: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 3: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 4: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 4: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 5: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 5: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 6: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 6: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 7: actions should increase by 2.
+Player 2 actions before call to village: 1
+Player 2 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 7: card count should increase by 1.
+Player 2 card count before call to village: 0
+Player 2 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 8: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 8: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 9: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 9: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 10: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 10: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 11: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 11: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 12: actions should increase by 2.
+Player 2 actions before call to village: 1
+Player 2 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 12: card count should increase by 1.
+Player 2 card count before call to village: 0
+Player 2 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 13: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 13: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 14: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 14: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 15: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 15: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 16: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 16: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 17: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 17: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 18: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 18: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 19: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 19: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 20: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 20: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 21: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 21: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 22: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 22: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 23: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 23: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 24: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 24: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 25: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 25: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 26: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 26: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 27: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 27: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 28: actions should increase by 2.
+Player 2 actions before call to village: 1
+Player 2 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 28: card count should increase by 1.
+Player 2 card count before call to village: 0
+Player 2 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 29: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 29: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 30: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 30: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 31: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 31: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 32: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 32: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 33: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 33: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 34: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 34: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 35: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 35: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 36: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 36: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 37: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 37: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 38: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 38: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 39: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 39: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 40: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 40: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 41: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 41: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 42: actions should increase by 2.
+Player 2 actions before call to village: 1
+Player 2 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 42: card count should increase by 1.
+Player 2 card count before call to village: 0
+Player 2 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 43: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 43: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 44: actions should increase by 2.
+Player 2 actions before call to village: 1
+Player 2 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 44: card count should increase by 1.
+Player 2 card count before call to village: 0
+Player 2 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 45: actions should increase by 2.
+Player 2 actions before call to village: 1
+Player 2 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 45: card count should increase by 1.
+Player 2 card count before call to village: 0
+Player 2 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 46: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 46: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 47: actions should increase by 2.
+Player 2 actions before call to village: 1
+Player 2 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 47: card count should increase by 1.
+Player 2 card count before call to village: 0
+Player 2 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 48: actions should increase by 2.
+Player 3 actions before call to village: 1
+Player 3 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 48: card count should increase by 1.
+Player 3 card count before call to village: 0
+Player 3 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+Test 49: actions should increase by 2.
+Player 0 actions before call to village: 1
+Player 0 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 49: card count should increase by 1.
+Player 0 card count before call to village: 5
+Player 0 card count after call to village: 5
+TEST FAILED. Card count did not increase by 1.
+
+Test 50: actions should increase by 2.
+Player 1 actions before call to village: 1
+Player 1 actions after call to village: 11
+TEST FAILED. Actions did not increase by 2.
+
+
+Test 50: card count should increase by 1.
+Player 1 card count before call to village: 0
+Player 1 card count after call to village: 0
+TEST FAILED. Card count did not increase by 1.
+
+End of randomtestcard2.
+
+Results for randomtestadventurer:
+-------------Testing Adventurer Card---------------
+Test 1: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 1: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 2: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 2: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 3: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 3: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 4: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 4: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 5: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 5: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 6: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 6: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 7: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 7: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 8: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 8: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 9: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 9: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 10: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 10: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 11: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 11: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 12: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 12: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 13: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 13: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 14: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 14: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 15: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 15: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 16: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 16: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 17: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 17: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 18: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 18: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 19: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 19: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 20: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 20: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 21: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 21: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 22: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 22: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 23: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 23: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 24: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 24: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 25: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 25: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 26: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 26: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 27: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 27: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 28: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 28: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 29: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 29: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 30: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 30: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 31: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 31: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 32: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 32: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 33: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 33: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 34: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 34: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 35: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 35: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 36: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 36: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 37: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 37: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 38: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 38: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 39: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 39: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 40: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 40: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 41: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 41: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 42: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 42: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 43: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 43: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 44: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 44: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 45: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 45: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 46: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 46: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 47: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 47: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 48: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 48: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 49: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 49: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+Test 50: discard card should increase.
+Player 0 discard count before call to adventurer: 0
+Player 0 discard count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+
+Test 50: card count should change.
+Player 0 card count before call to adventurer: 5
+Player 0 card count after call to adventurer: 8
+TEST SUCCESSFULLY COMPLETED - PASS
+End of cardtestadventurer.
+
+**********gcov results***********
+Function 'great_hallCard'
+Lines executed:100.00% of 5
+No branches
+Calls executed:100.00% of 2
+
+Function 'VillageCard'
+Lines executed:100.00% of 5
+No branches
+Calls executed:100.00% of 2
+
+Function 'Council_RoomCard'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'AdventurerCard'
+Lines executed:100.00% of 15
+Branches executed:100.00% of 12
+Taken at least once:83.33% of 12
+Calls executed:100.00% of 2
+
+Function 'SmithyCard'
+Lines executed:100.00% of 5
+Branches executed:100.00% of 2
+Taken at least once:100.00% of 2
+Calls executed:100.00% of 2
+
+Function 'updateCoins'
+Lines executed:81.82% of 11
+Branches executed:100.00% of 8
+Taken at least once:75.00% of 8
+No calls
+
+Function 'gainCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 1
+
+Function 'discardCard'
+Lines executed:92.31% of 13
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+No calls
+
+Function 'cardEffect'
+Lines executed:0.00% of 211
+Branches executed:0.00% of 179
+Taken at least once:0.00% of 179
+Calls executed:0.00% of 58
+
+Function 'getCost'
+Lines executed:20.00% of 30
+Branches executed:100.00% of 28
+Taken at least once:14.29% of 28
+No calls
+
+Function 'drawCard'
+Lines executed:77.27% of 22
+Branches executed:100.00% of 6
+Taken at least once:66.67% of 6
+Calls executed:100.00% of 1
+
+Function 'getWinners'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 22
+Taken at least once:0.00% of 22
+Calls executed:0.00% of 2
+
+Function 'scoreFor'
+Lines executed:0.00% of 24
+Branches executed:0.00% of 42
+Taken at least once:0.00% of 42
+Calls executed:0.00% of 3
+
+Function 'isGameOver'
+Lines executed:0.00% of 10
+Branches executed:0.00% of 8
+Taken at least once:0.00% of 8
+No calls
+
+Function 'endTurn'
+Lines executed:0.00% of 20
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 3
+
+Function 'whoseTurn'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'fullDeckCount'
+Lines executed:0.00% of 9
+Branches executed:0.00% of 12
+Taken at least once:0.00% of 12
+No calls
+
+Function 'supplyCount'
+Lines executed:0.00% of 2
+No branches
+No calls
+
+Function 'handCard'
+Lines executed:0.00% of 3
+No branches
+Calls executed:0.00% of 1
+
+Function 'numHandCards'
+Lines executed:0.00% of 2
+No branches
+Calls executed:0.00% of 1
+
+Function 'buyCard'
+Lines executed:0.00% of 13
+Branches executed:0.00% of 6
+Taken at least once:0.00% of 6
+Calls executed:0.00% of 4
+
+Function 'playCard'
+Lines executed:0.00% of 14
+Branches executed:0.00% of 10
+Taken at least once:0.00% of 10
+Calls executed:0.00% of 3
+
+Function 'shuffle'
+Lines executed:100.00% of 16
+Branches executed:100.00% of 8
+Taken at least once:100.00% of 8
+Calls executed:100.00% of 2
+
+Function 'initializeGame'
+Lines executed:98.39% of 62
+Branches executed:100.00% of 46
+Taken at least once:93.48% of 46
+Calls executed:100.00% of 5
+
+Function 'kingdomCards'
+Lines executed:0.00% of 13
+No branches
+No calls
+
+Function 'newGame'
+Lines executed:0.00% of 3
+No branches
+No calls
+
+Function 'compare'
+Lines executed:100.00% of 6
+Branches executed:100.00% of 4
+Taken at least once:100.00% of 4
+No calls
+
+File 'dominion.c'
+Lines executed:27.94% of 562
+Branches executed:28.78% of 417
+Taken at least once:20.38% of 417
+Calls executed:16.84% of 95
+Creating 'dominion.c.gcov'
+

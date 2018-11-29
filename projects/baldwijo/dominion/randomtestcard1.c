@@ -47,7 +47,8 @@ int main(){
 		int curCardCount = testG.handCount[currentPlayer];
 		printf("player %d card count before call to smithy: %d\n", currentPlayer, curCardCount);
 
-		cardSmithy(currentPlayer, &testG, handpos);
+		//cardSmithy(currentPlayer, &testG, handpos);
+		SmithyCard(&testG, currentPlayer, handpos);
 		int updateCardCount = testG.handCount[currentPlayer];
 		printf("player %d card count after call to smithy: %d\n", currentPlayer, updateCardCount);
 
@@ -67,7 +68,8 @@ int main(){
 		int curDisCount = testG.discardCount[currentPlayer];
 		printf("Player %d discard count before call to smithy: %d\n", currentPlayer, curDisCount);
 
-		cardSmithy(currentPlayer, &testG, handpos);
+		//cardSmithy(currentPlayer, &testG, handpos);
+		SmithyCard(&testG, currentPlayer, handpos);
 		int updateDisCount = testG.discardCount[currentPlayer];
 		printf("Player %d discard count after call to smithy: %d\n", currentPlayer, updateDisCount);
 
